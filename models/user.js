@@ -30,6 +30,10 @@ const userSchema = mongoose.Schema({
     },
     long:{
         type: String
+    },
+    password:{
+        type: String,
+        require: true
     }
 });
 
