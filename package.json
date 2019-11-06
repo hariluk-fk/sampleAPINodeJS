@@ -1,0 +1,30 @@
+{
+  "name": "sampleapi",
+  "version": "1.0.0",
+  "description": "Sample API for Education about NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "logger": "0.0.1",
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hariluk-fk/sampleAPINodeJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hariluk-fk/sampleAPINodeJS/issues"
+  },
+  "homepage": "https://github.com/hariluk-fk/sampleAPINodeJS#readme"
+}
