@@ -1,27 +1,29 @@
-Sample API for Education about NodeJS
-- Concept
-	- Register
-		- receive information from body
-	- Login
-		- receive parameter from url field : email, password and key
-		- all of parameter is base64
-		- key field is random between ep and pe
-		- return code
-	- Update Profile
-		- receive parameter from url field : userId
-		- receive information from body
-	- Remove User
-	- get lat and long 
+SampleAPI Project
+	- objective
+		- education about API
+	- tool
+		- NodeJS
+		- ExpressJS
+		- MongoDB
+	- Concept
+		- Connect DB
+		- CRUD Function
+		- GET and POST Function
+		- Decode parameter (base64)
+	- Function
+		- Register
+		- Login
+		- Update Profile
+		- Remove User
 
-** when send parameter, must encode with base64.
-*** when send parameter more than one parameter, must send key parameter at last index of url and random it.
-	example (**)
-		- localhost:3000/authentication/aGFyaWx1azAwQGdtYWlsLmNvbQ==/aW5pdEAxMjM0/ZXA=
-			- ZXA= is key (when decode is ep)
-			- aGFyaWx1azAwQGdtYWlsLmNvbQ== is email (e) (when decode hariluk00@gmail.com)
-			- aW5pdEAxMjM0 is password (p) (when decode init@1234)
-	example (***)
-		- localhost:3000/authentication/param1/param2/ep
+	- Remark
+		- when send parameter, must encode with base64.
+			- localhost:3000/authentication/aGFyaWx1azAwQGdtYWlsLmNvbQ==/aW5pdEAxMjM0/ZXA=
+				- ZXA= is key (when decode is ep)
+				- aGFyaWx1azAwQGdtYWlsLmNvbQ== is email (e) (when decode hariluk00@gmail.com)
+				- aW5pdEAxMjM0 is password (p) (when decode init@1234)
+		- when send parameter more than one parameter, must send key parameter at last index of url and random it.
+			- localhost:3000/authentication/param1/param2/ep
 			- param1 is email (e)
 			- param2 is password (p)
 		- localhost:3000/authentication/param1/param2/pe
